@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+        body{
+            background-color:azure;
+        }
+        h1{
+            text-align: center;
+        }
+        textarea{
+            width: 100%;
+        }
+        button{
+            margin: 5px;
+            margin-left: 0px;
+        }
+        button:hover{
+            color:blue ;
+
+        }
+    </style>
+<body>
+
+   
+    <div>
+        <h1>Khảo Sát Ý Kiến Khách Hàng</h1>
+        <p>Chúng tôi rất mong nhận được những đóng góp của bạn để cải thiện chất lượng dịch vụ.</p>
+
+        <form>
+
+            <fieldset>
+                <legend>1. Bạn đánh giá chất lượng dịch vụ tổng thể của chúng tôi như thế nào?</legend>
+                <div>
+                    <input type="radio" id="excellent" name="service_rating" value="excellent" required>
+                    <label for="excellent">Tuyệt vời</label>
+                </div>
+                <div>
+                    <input type="radio" id="good" name="service_rating" value="good">
+                    <label for="good">Tốt</label>
+                </div>
+                <div>
+                    <input type="radio" id="average" name="service_rating" value="average">
+                    <label for="average">Trung bình</label>
+                </div>
+                <div>
+                    <input type="radio" id="poor" name="service_rating" value="poor">
+                    <label for="poor">Kém</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Những yếu tố nào ảnh hưởng đến trải nghiệm của bạn? (Có thể chọn nhiều)</legend>
+                <div>
+                    <input type="checkbox" id="staff" value="staff">
+                    <label for="staff">Thái độ nhân viên</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="product" value="product">
+                    <label for="product">Chất lượng sản phẩm/dịch vụ</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="price" value="price">
+                    <label for="price">Giá cả</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="time" value="time">
+                    <label for="time">Thời gian chờ đợi</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="other" value="other">
+                    <label for="other">Khác (vui lòng ghi rõ bên dưới)</label>
+                </div>
+            </fieldset>
+
+            <fieldset>
+              <legend>3. Bạn có bất kỳ góp ý hoặc đề xuất nào khác cho chúng tôi không?</legend>
+                <textarea id="suggestions" name="suggestions" rows="6" placeholder="Viết ý kiến của bạn tại đây"></textarea>
+            </fieldset>
+
+            <button type="submit">Gửi Khảo Sát</button>
+
+        </form>
+    </div>
+
+</body>
+
+</html>
