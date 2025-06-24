@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+    <style>
+
+
+body {
+
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+
+}
+
+.feedback-container {
+    padding: 35px ;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    margin-bottom: 10px;
+
+}
+
+p{
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 25px;
+    text-align: left;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bolder;
+}
+
+input,
+textarea, buttonbutton {
+    width: 400px;
+    padding: 12px;
+    border: 1px solid white;
+    border-radius: 8px;
+    background-color: #fff;
+
+}
+
+select{
+    width: 100%;
+}
+.stars{
+    text-align: center;
+}
+
+
+.butt{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    }
+button{
+    padding: 10px 40px;
+    width: 100%;
+    background-color: rgb(111, 255, 183);
+}
+button:hover{
+      color:blue;
+    }
+button:active{
+    text-decoration: underline;
+        }
+    </style>
+<body>
+    <div class="feedback-container">
+        <h1>Gửi Phản Hồi Của Bạn</h1>
+        <p>Chúng tôi rất trân trọng ý kiến đóng góp của bạn!</p>
+
+        <form action="#" method="post">
+            <div class="form-group">
+                <label for="rating">Đánh giá (1–5 sao):</label>
+                <select id="rating" name="rating" required>
+                <option class="stars" value="">-- Chọn số sao --</option>
+                <option value="1">★☆☆☆☆ - Rất tệ</option>
+                <option value="2">★★☆☆☆ - Tệ</option>
+                <option value="3">★★★☆☆ - Bình thường</option>
+                <option value="4">★★★★☆ - Tốt</option>
+                <option value="5">★★★★★ - Rất tốt</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="feedback">Phản hồi của bạn:</label>
+                <textarea id="feedback" name="feedback" rows="6" placeholder="Chia sẻ suy nghĩ và trải nghiệm của bạn với chúng tôi" required></textarea>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email của bạn (tùy chọn):</label>
+                <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn">
+            </div>
+            <div class="butt">
+            <button type="submit" class="submit-button">Gửi Phản Hồi</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+
+
