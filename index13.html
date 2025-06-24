@@ -6,13 +6,61 @@
     <title>Document</title>
 </head>
 <style>
+
+    form{
+        border: 3px solid #e97e7e ;
+        border-radius: 10px;
+        background-image: linear-gradient(to top left, #e0f2f7, #ffebee);
+        padding: 80px;
+        width: 100%;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        
+    }
     body{
+        
         background-color:azure ;
         display:flex;
         justify-content: center;
         align-items: center;
         box-sizing: border-box;
     }
+    h1{
+        text-align: center;
+        
+    }
+        input, textarea, button {
+        padding: 10px;
+        width: 100%
+        }
+        select{
+        padding: 10px;
+        width: 100%;
+        }
+        input, select{
+            margin-bottom: 10px;
+        }
+        
+        label {
+        display: block;
+        margin-bottom: -12px;
+        font-weight: bold;
+        }
+        div.booking{
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            
+        }
+        button{
+            background-color: rgb(111, 255, 183);
+        }
+        button:hover{
+            color:blue;
+        }
+        button:active{
+            text-decoration: underline;
+        }
+
     
 </style>
 <body>
@@ -22,18 +70,18 @@
                 <h1>Đặt bàn ăn</h1>
                 <p class="slogan">Trải nghiệm ẩm thực tuyệt vời đang chờ đón bạn!</p>
             </div>
-            <div>
+            <div class="booking_form">
                 <label for="date">Ngày đặt</label><br>
                 <input type="date" id="book_date" name="book_date" required>
             </div>
-            <div>
+            <div class="booking_form">
                 <label for="time">Giờ đặt</label><br>
                 <input type="time" id="book_time" name="book_time" required>
             </div>
-            <div>
-                <label for="time">Giờ đặt</label><br>
+            <div class="booking_form">
+                <label for="time">Số lượng khách</label><br>
                 <select name="num_guest" id="num_guest" required>
-                    <option value="">--Số lượng--</option>
+                    <option class="soluongsoluong" value="">--Số lượng--</option>
                     <option value="">1</option>
                     <option value="">2</option>
                     <option value="">3</option>
@@ -46,19 +94,19 @@
                     <option value="">10</option>
                 </select>
             </div>
-            <div>
+            <div class="booking_form">
                 <label for="request">Yêu cầu</label><br>
                 <textarea name="request" id="request" rows="4" placeholder="Bạn muốn yêu cầu gì" required></textarea>
             </div>
-            <div>
+            <div class="booking_form">
                 <label for="name">Tên người đặt</label><br>
                 <input type="text" id="name" name="name">
             </div>
-            <div>
+            <div class="booking_form">
                 <label for="phone">Số điện thoại</label><br>
                 <input type="tel" id="phone" name="phone">
             </div>
-            <div>
+            <div class="booking">
                 <button type="submit">Xác nhận đặt bàn</button>
             </div>
         </div>
